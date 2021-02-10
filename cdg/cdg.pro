@@ -10,13 +10,16 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    secwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    secwindow.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    secwindow.ui
 
 TRANSLATIONS += \
     cdg_fr_FR.ts
