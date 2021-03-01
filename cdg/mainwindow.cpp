@@ -1,6 +1,7 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "otherwindow.h"
+
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -11,7 +12,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label2->setStyleSheet(QString::fromUtf8("background-color: rgb(197, 29, 74);"));
     QPixmap pix("/home/maxime/Images/1200px-Raspberry_Pi_logo.svg.png");
     ui->label3->setPixmap(pix);
-
 }
 
 MainWindow::~MainWindow()
@@ -21,7 +21,15 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
+    QString testText = "test";
     s=new secwindow(this);
     s->show();
-    ui->label4->setText("Hello World !");
+    s->text(testText);
+    QString test2Text;
+    test2Text = "Hello World !";
+    ui->label4->setText(test2Text);
+    s->text(test2Text);
 }
+
+
+

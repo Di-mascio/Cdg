@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <secwindow.h>
+#include <string.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,12 +18,13 @@ public:
     ~MainWindow();
 
 
-
 private slots:
     void on_pushButton_clicked();
+
 
 private:
     Ui::MainWindow *ui;
     secwindow *s;
+
 };
 #endif // MAINWINDOW_H

@@ -14,9 +14,14 @@ class secwindow : public QMainWindow
 public:
     explicit secwindow(QWidget *parent = nullptr);
     ~secwindow();
+    void text(QString string);
+
+private slots:
+
 
 private:
     Ui::secwindow *ui;
+
 };
 
 #endif // SECWINDOW_H

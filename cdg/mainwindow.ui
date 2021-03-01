@@ -75,7 +75,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Suivant</string>
+     <string>Ouvrir 2nd window</string>
     </property>
    </widget>
    <widget class="QLabel" name="label4">
@@ -101,8 +101,32 @@
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuCalibrage">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionMesures"/>
+    <addaction name="actionCalibrage"/>
+    <addaction name="actionConfiguration_R_seau"/>
+   </widget>
+   <addaction name="menuCalibrage"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionMesures">
+   <property name="text">
+    <string>Mesures</string>
+   </property>
+  </action>
+  <action name="actionConfiguration_R_seau">
+   <property name="text">
+    <string>Configuration Réseau</string>
+   </property>
+  </action>
+  <action name="actionCalibrage">
+   <property name="text">
+    <string>Calibrage</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

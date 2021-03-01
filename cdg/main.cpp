@@ -1,5 +1,6 @@
 #include "mainwindow.h"
-
+#include "secwindow.h"
+#include "ui_secwindow.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
