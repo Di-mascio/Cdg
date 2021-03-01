@@ -112,17 +112,43 @@
    <addaction name="menuCalibrage"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMesures"/>
+   <addaction name="actionCalibrage"/>
+   <addaction name="actionConfiguration_R_seau"/>
+  </widget>
   <action name="actionMesures">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Images/mesures.png</normaloff>../../../Images/mesures.png</iconset>
+   </property>
    <property name="text">
     <string>Mesures</string>
    </property>
   </action>
   <action name="actionConfiguration_R_seau">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Images/config reseau.jpeg</normaloff>../../../Images/config reseau.jpeg</iconset>
+   </property>
    <property name="text">
     <string>Configuration Réseau</string>
    </property>
   </action>
   <action name="actionCalibrage">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Images/compas.png</normaloff>../../../Images/compas.png</iconset>
+   </property>
    <property name="text">
     <string>Calibrage</string>
    </property>
