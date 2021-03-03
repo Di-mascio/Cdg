@@ -16,11 +16,20 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    float pos_X;
+    float pos_Y;
+    float pos_Z;
 
 
 private slots:
-    void on_pushButton_clicked();
+    //void on_pushButton_clicked(); //pour transfère de data entre différentes windows
 
+
+    void on_actionMesures_triggered();
+
+    void on_actionCalibrage_triggered();
+
+    void on_actionConfiguration_R_seau_triggered();
 
 private:
     Ui::MainWindow *ui;

@@ -14,7 +14,7 @@ class secwindow : public QMainWindow
 public:
     explicit secwindow(QWidget *parent = nullptr);
     ~secwindow();
-    void text(QString string);
+    //void text(QString string); //pour transfère de data entre différentes windows
 
 private slots:
 

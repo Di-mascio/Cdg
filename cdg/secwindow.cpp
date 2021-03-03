@@ -17,7 +17,7 @@ secwindow::~secwindow()
 }
 
 
-void secwindow::text(QString string)
+/*void secwindow::text(QString string) // pour transfère de data entre différentes windows
 {
     ui->label->setText(string);
-}
+}*/
